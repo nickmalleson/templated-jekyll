@@ -1,0 +1,22 @@
+# Site settings
+title: The Website Title
+tagline: "The website tagline"
+keywords: Keyword1, Keyword1, Another Keyword
+description: > # this means to ignore newlines until "baseurl:"
+    A description of the website
+
+#url:              http://hyde.getpoole.com
+#baseurl:          /leeds-quant-crim/
+baseurl:          ""
+
+author :
+  name : Nick Malleson
+  github : nickmalleson
+  twitter : nickmalleson
+
+
+twitter_username: nickmalleson
+github_username:  nickmalleson
+email: n.s.malleson@leeds.ac.uk
+
+exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]

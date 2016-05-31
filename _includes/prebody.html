@@ -1,0 +1,30 @@
+<!--[if lt IE 8]>
+                    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<!-- Header -->
+<header id="header" class="skel-layers-fixed">
+    <h1><a href="#">{{ site.title }}</a></h1>
+
+
+    {% comment %}
+    The code below dynamically generates a sidebar nav of pages with
+    `layout: default` in the front-matter.
+    {% endcomment %}
+
+    <nav id="nav">
+        <ul>
+            {% assign pages_list = site.pages %}
+            {% for node in pages_list %}
+            {% if node.title != null %}
+            {% if node.layout == "default" %}
+            <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
+</header>
+
+
